@@ -3,11 +3,10 @@ def main():
     print(f"Amount Due: {price}")
 
     accepted_values = [5, 10, 25]
-    change = 0
 
-    inserted_amount(price, accepted_values, change)
+    inserted_amount(price, accepted_values)
 
-def inserted_amount(price, accepted_values, change):
+def inserted_amount(price, accepted_values):
     while(price > 0):
         payment = int(input("Insert Coin: "))
         if(payment in accepted_values):
